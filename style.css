@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --very-Dark-Magenta: hsl(300, 43%, 22%);
+    --soft-Pink: hsl(333, 80%, 67%);
+    --dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -7vh  left -10vw , bottom -10vh right -5vw;
+    background-color: var(--white);
+    font-size: 16px;
+    font-family:'League Spartan', sans-serif ;
+}
+
+main{
+    max-width: 1200px;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+main .first-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0;
+}
+
+main .first-box{
+    max-width: 350px;
+}
+
+main .first-box .title{
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+    color: var(--very-Dark-Magenta);
+}
+
+main .first-box .txt{
+    font-size: 1.02rem;
+    color: var(--dark-Grayish-Magenta);
+    line-height: 1.5rem;
+}
+
+main .second-box .rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 320px;
+    background-color: var(--light-Grayish-Magenta);
+    margin: .5rem 0;
+    padding: .75rem;
+    border-radius: 8px;
+}
+
+main .second-box .rate-container:nth-child(2){
+    margin-left: 1.25rem;
+}
+
+main .second-box .rate-container:nth-child(3){
+    margin-left: 2.5rem;
+}
+
+main .second-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main .second-container .card{
+    flex: 1;
+    background-color: var(--very-Dark-Magenta);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    color: var(--white);
+    max-width: 350px;
+}
+
+main .card .user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .card .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+main .card .user .user-info .user-name{
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+main .card .user .user-info strong{
+    color: var(--soft-Pink);
+    font-weight: 400;
+}
+
+main .card  .description{
+    line-height: 1.25rem;
+}
+
+main .second-container .card:nth-child(2){
+    margin-top: 2rem;
+}
+
+main .second-container .card:last-child{
+    margin-top: 4rem;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer a{
+    color: var(--soft-Pink);
+    text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+        background-position: top -5vh left -5vw, bottom -5vh right -5vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    main{
+        width: 95%;
+        text-align: center;
+    }
+
+    main .first-container{
+        flex-direction: column;
+        /* margin: 1rem; */
+        padding: 0;
+    }
+
+    main .second-box .rate-container{
+        width: 100%;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    main .first-container .rate-container:nth-child(2),
+    main .first-container .rate-container:nth-child(3){
+        margin-left: 0;
+        width: 100%;
+    }
+
+    main .second-container{
+        flex-direction: column;
+    }
+
+    main .card  .description{
+        text-align: left;
+    }
+
+    main .second-container .card:nth-child(2),
+    main .second-container .card:nth-child(3){
+        margin-top: 0;
+    }
+
+    footer{
+        margin :1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
